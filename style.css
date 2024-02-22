@@ -25,7 +25,28 @@ body {
     margin: 0;
     text-shadow: black;
   }
+
+  .banner p {
+    color: white;
+  }
   
+  .btn_yellow {
+    background-color:#E2B797 ;
+    color: #AD5816;
+    padding: 16px 48px;
+    border-radius: 4px;
+    display: inline-block;
+    text-decoration: none;
+    transition: .3s;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .btn_yellow:hover{
+    background-color: #E2B797;
+    color: #5c2e0b;
+  }
+
   .button {
     color: #e3c47c;
     font-size: 30px;
@@ -104,8 +125,29 @@ body {
   margin: 0 auto;
 }
 
+/* MOBIALE SECTION*/
+@media (max-width: 768px){
+  /*this code will only run on devices that are max 768px or width*/
+  .card-brown {
+    flex-direction: column;
+    gap:2rem;
+  }
+  .cards {
+    width: 100%
+  }
+}
+
+/*IPAD SECTIONS*/
+@media screen and (min-width:769px) and (max-width: 968px) {
+  /*this code runs only for ipad*/
+}
+
+/*above 14inches*/
+@media screen and (max-width:1364px) {
+  /* this code runs on bigger screen*/
+}
+
   @media (max-width: 300px) {
- 
     .cards {
       grid-template-columns: 1fr;
     }
